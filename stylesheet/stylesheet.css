@@ -1,15 +1,23 @@
 html body {
   font-family: Roboto, sans-serif;
   margin: 0 auto;
-  font-size: 16px;
+  font-size: 14px;
+  height: 100%;
 }
+
+li {
+  display: inline-block;
+  font-size: 14px;
+  padding: 10px;
+}
+
 
 /*Search Bar & and User*/
 
 #srcusr {
   margin: 0 10px;
   padding: 20px 10px 0 10px;
-  min-width: 1000px;
+  min-width: 1200px;
   height: 60px;
   font-size: 0;
 }
@@ -19,7 +27,7 @@ html body {
   margin: auto;
   height: 40px;
   vertical-align: middle;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .glogo {
@@ -29,13 +37,14 @@ html body {
 #srcb {
   margin: 10px auto;
   padding: 0 10px;
-  width: 632px;
+  width: 612px;
+  min-width: 400px;
   border: 1px solid #e4e4e4;
 }
 
 #srh {
   width: 90%;
-  height: 100%;
+  height: 90%;
   border: none;
 }
 
@@ -48,15 +57,14 @@ html body {
   position: relative;
   float: right;
   width: 195px;
-  height: 60px;
-  padding: 0 10px;
+  padding:  10px;
 }
 
 #usr span {
   display: inline-block;
   float: right;
-  margin-top: 20px;
-  height: 30px;
+  margin-top: 10px;
+  height: 20px;
   vertical-align: middle;
   padding: 0 10px;
 }
@@ -70,7 +78,45 @@ html body {
 
 /*Navigation Menu and Tools*/
 
+#navbar {
+  position: relative;
+  top: 2px;
+  margin: 0 auto;
+  border-bottom: 1px solid #e4e4e4;
+  padding: 0 0 0 150px;
+  min-width: 1200px;
+  height: 40px;
+}
 
+nav {
+  width: 630px;
+  min-width: 400px;
+  padding-left: 20px;
+  height: 40px;
+}
+
+#menubar {
+  list-style-type: none;
+  padding: 0;
+  font-size: 0px;
+  height: 40px;
+}
+
+.tr {
+  float: right;
+}
+
+/* Main search div */
+
+#srcres {
+  position: relative;
+  top: 2px;
+  left: 170px;
+  margin-top: 10px;
+  padding-left: 10px;
+  height: 80%;
+  width: 630px;
+}
 
 /*Search result metric*/
 
@@ -81,3 +127,83 @@ html body {
 
 
 /*Related Searches*/
+
+/* Search Count */
+
+.srchcnt {
+  height: 90px;
+  width: 630px;
+  text-align: center;
+}
+
+.g1 {
+  display: inline-block;
+  height: 40px;
+  width: 28px;
+  background-image: url(https://www.google.com/images/nav_logo242.png);
+  background-position: -24px 0;
+}
+
+.g2 {
+  display: inline-block;
+  height: 40px;
+  width: 20px;
+  background-image: url(https://www.google.com/images/nav_logo242.png);
+  background-position: -54px 0;
+}
+
+.gylwo {
+  display: inline-block;
+  height: 40px;
+  width: 20px;
+  background-image: url(https://www.google.com/images/nav_logo242.png);
+  background-position: -74px 0;
+}
+
+.gnxt {
+  display: inline-block;
+  height: 40px;
+  width: 70px;
+  background-image: url(https://www.google.com/images/nav_logo242.png);
+  background-position: -97px 0;
+}
+
+table {
+  margin: 0 auto;  
+}
+
+tr {
+  height: 40px;
+}
+
+
+/* Footer */
+
+#gft {
+  position: relative;
+  bottom: 0;
+  border-top: 1px solid #e4e4e4;
+}
+
+.lct {
+  border-bottom: 1px solid #e4e4e4;
+
+  padding: 10px 0 10px 10px;
+}
+
+.geoloc {
+  margin-left: 170px;
+}
+
+footer {
+  position: relative;
+  left: 170px;
+  width: 100%;
+}
+
+.ftr {
+  list-style-type: none;
+  padding: 0;
+  font-size: 0px;
+  height: 40px;
+}
